@@ -18,7 +18,8 @@ d3.json("miserables.json", function(error, graph) {
   if (error) throw error;
 
   simulation
-      .nodes(graph.nodes)
+      .nodes(graph.nodes).
+      .append("text").text("saurav")
       .on("tick", ticked);
 
   simulation.force("link")
