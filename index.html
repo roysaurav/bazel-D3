@@ -50,9 +50,9 @@ d3.csv("flare.csv", function(error, data) {
   console.log(data);
   console.log("---------------------");
 
-  var root = stratify(data)
+  var root = stratify(data);
       .sort(function(a, b) { return (a.height - b.height) || a.id.localeCompare(b.id); });
-
+      console.log(root);
   cluster(root);
 
   var link = g.selectAll(".link")
