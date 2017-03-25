@@ -2,3 +2,7 @@ id,value
 //:main,
 //:main.//:x,
 //:main.//main/cc,
+//:main.@bazel_tools//tools/cpp:malloc,
+//:main.@bazel_tools//tools/cpp:stl,
+//:main.//tools/defaults:crosstools,
+//:main.//:x.//tools/defaults:crosstools,
